@@ -32,18 +32,18 @@ public class Person implements Comparable{
 		return this.lName;
 	}
 	
-	@Override
+	@Override // why only use first name?
 	public boolean equals(Object o) {
 		Person p = (Person) o;
 		return fName.equals(p.fName);
 	}
 	
-	@Override
+	@Override // why onlt use first name?
 	public int hashCode() {
 		return fName.hashCode();
 	}
 	
-	@Override
+	@Override// how about if the first name is equal?
 	public int compareTo(Object o) {              //sort by first name
 		Person p = (Person) o;
 		return this.fName.compareTo(p.fName);
